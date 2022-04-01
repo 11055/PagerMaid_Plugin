@@ -53,7 +53,7 @@ async def change_name_auto(context):
                               '欠你的宠爱', '我在等待重来', '天空仍灿烂', '它爱着大海', '情歌被打败', '爱已不存在']
                 k = random.randint(0, 95)
                 first_name = last_names[k]
-                last_name = '小哑巴 %s:%s  ' % (hour, minu)
+                last_name = '大脑斧 %s:%s  ' % (hour, minu)
 
                 await client1(UpdateProfileRequest(first_name=first_name, last_name=last_name))
                 logger.info('Updated -> %s' % first_name)
